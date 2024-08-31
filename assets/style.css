@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(38, 38, 64);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  color: white;
+  width: 80%;
+  margin: 50px auto;
+  padding: 10px;
+  border: 2px solid rgb(172, 252, 251);
+  border-radius: 10px;
+  background-color: rgb(58, 58, 82);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container section {
+  align-self: flex-start;
+}
+
+.container section ul {
+  margin: 1rem 0;
+}
+
+.container section ul li {
+  margin: 2rem;
+  list-style: none;
+  font-size: 1rem;
+}
+
+.container ul li input {
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid gray;
+  padding: 0.75rem 0;
+  outline: none;
+  color: white;
+}
+
+.container ul li input:focus {
+  border-bottom: 2px solid rgb(172, 252, 251);
+}
+
+.container ul li input#waktu,
+input#return {
+  width: 25%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+  padding: 1em;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(51, 51, 66);
+  color: white;
+  margin: 0.5rem;
+}
+
+button:hover {
+  border: 1px solid rgb(172, 252, 251);
+}
+
+button.active {
+  background-color: rgb(172, 252, 251);
+  color: rgb(38, 38, 64);
+}
+
+button#calc {
+  align-self: flex-end;
+}
+
+section.result {
+  padding: 10px;
+}
+
+section.result p {
+  margin: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 35%;
+  }
+}

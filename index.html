@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment Calculator</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Kalkulator Investasi</h1>
+      <section>
+        <ul>
+          <li>
+            <label for="name">Masukan nama anda</label><br />
+            <input type="text" id="name" />
+          </li>
+          <li>
+            <label for="waktu">Lama waktu investasi</label><br />
+            <input type="number" id="waktu" />
+            <label for="satuan">Tahun</label>
+          </li>
+          <li>
+            <label for="button">Kamu akan menabung setiap</label><br />
+            <button id="month" class="button">Setiap Bulan</button>
+            <button id="year" class="button">Setiap Tahun</button>
+          </li>
+          <li>
+            <label for="jumlahUang">Target investasi</label><br />
+            <label for="satuan">Rp</label>
+            <input type="number" id="jumlahUang" />
+          </li>
+          <li>
+            <label for="return">Ekspetasi Return</label><br />
+            <input type="number" id="return" />
+            <label for="satuan">% / Tahun</label>
+          </li>
+        </ul>
+      </section>
+      <button class="button" id="calc">Hitung</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
