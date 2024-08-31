@@ -101,7 +101,7 @@ section.result p {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background-color: rgb(27, 27, 32);
   color: white;
